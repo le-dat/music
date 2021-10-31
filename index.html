@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="./asset//avarta/icon-page1.png">
+    <link href="https:/fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/fontawesome-free-5.15 (1).4-web/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <div class="player ">
+        <div class="dashboard">
+            <div class="header">
+                <h4 class="page-header">Now Playing</h4>
+                <h2 class="page-header-name">String 57th & 9th</h2>
+            </div>
+            
+            <!-- CD -->
+            <div class="thumb">
+                <img class="cd" src="./asset/avarta/1.png" alt="avata nhac">
+            </div>
+                
+            <!-- tua/dung bai hat -->
+            
+            <div class="change">
+                <button class="btn btn-redo ">
+                    <i class="fas fa-redo-alt"></i>
+                </button>
+                <button class="btn btn-pre ">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+
+
+                <button class="btn btn-red btn-play ">
+                    <i class="fas fa-play-circle play-circle"></i>
+                    <i class="fas fa-pause-circle pause-circle"></i>
+                </button>
+
+
+                <button class="btn btn-next ">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+                <button class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </button>
+        
+            </div>
+
+            <input type="range" name="progress" id="progress" class="progress" min="0" max="100" value="0" step="1">
+            <audio id ="audio" src=""></audio>
+        </div>
+    
+        <!-- list bai hat -->
+        <div class="container-cover">
+            
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

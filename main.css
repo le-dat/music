@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+:root {
+    --widthCd: 200px ;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', ans-serif;
+    box-sizing: border-box;
+}
+.player {
+    overflow: hidden;
+}
+.dashboard {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff ;
+    padding-bottom: 6rem;
+}
+.header {
+    text-align: center ;
+}
+.header .page-header {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #f92a2a;
+    margin: 1.5rem;
+}
+.header .page-header-name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2rem;
+}
+.thumb {
+    max-width: var(--widthCd);
+    display: flex;
+    margin: auto;
+}
+.thumb .cd{
+    border-radius: 50%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+/* tua dung bai hat */
+.change {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem; 
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.btn{
+    padding: 10px;
+    margin: 10px;
+    outline: none ;
+    border: none;
+    background-color:#fff ;
+}
+.btn i {
+    font-size: 2rem;
+}
+.btn-red i{
+    color: #f31313;
+    font-size: 5rem;
+}
+.pause-circle {
+    display: none;
+}
+.playing .play-circle {
+    display: none;
+}
+.playing .pause-circle {
+    display: block;
+}
+.active {
+    color: #f31313;
+}
+
+
+.progress {
+    display: flex;
+    margin: auto;
+    min-width: 320px ;
+    outline: none;
+    opacity: 0.7;
+}
+.progress:hvover {
+    opacity: 1;
+}
+.container-cover {
+    background-color: #e4e3e3;
+    overflow: hidden;
+    margin: 47rem 0 0 0;
+}
+.container-music {
+    display: flex;
+    margin : 5px 0 ;
+    background-color: #fff;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 5px;
+}
+.container-music:hover {
+    background-color: #ff6666;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+}
+.container-music:active {
+    opacity: 0.8;
+}
+.container-music-avata {
+    width: 6rem;
+}
+.container-music-avata img {
+    width: 100%;
+    border-radius: 50%;
+}
+.container-music-desc {
+    flex: 1;
+    margin: 0 2rem;
+}
+.container-music-desc-header {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.container-music-desc-body {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.container-music-icon {
+    display: flex;
+    align-items: center;
+    min-width: 3rem;
+}
+.container-music-icon .ellipsis {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.container-music.active ,
+.container-music.active i {
+    background-color: #ff6666;
+    color: #fff;
+}
